@@ -1,0 +1,115 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f5fb;
+  color: #26334d;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+header {
+  background: #263b68;
+  color: white;
+  padding: 22px 8%;
+}
+
+header h2 {
+  margin: 0 0 8px;
+}
+
+header p {
+  margin: 0;
+  color: #dce5fa;
+}
+
+.card {
+  background: white;
+  width: min(620px, 90%);
+  margin: 65px auto;
+  padding: 35px;
+  text-align: center;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px #243b6412;
+}
+
+.card h1 {
+  font-size: 27px;
+}
+
+.card p {
+  color: #667085;
+  line-height: 1.6;
+}
+
+.upload-box {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  padding: 30px 15px;
+  margin-top: 25px;
+  border: 2px dashed #9aadd1;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow-wrap: anywhere;
+}
+
+.upload-icon {
+  font-size: 32px;
+  color: #315caa;
+}
+
+.upload-box span:last-child {
+  color: #778198;
+  font-size: 13px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.languages {
+  margin: 22px 0;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #315caa;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+footer {
+  text-align: center;
+  color: #778198;
+  font-size: 13px;
+  padding: 20px;
+}
+
+@media (max-width: 500px) {
+  .card {
+    padding: 22px;
+    margin: 35px auto;
+  }
+
+  .card h1 {
+    font-size: 23px;
+  }
+}

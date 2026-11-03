@@ -1,0 +1,6 @@
+
+flask
+flask-cors
+faster-whisper
+av
+gunicorn
